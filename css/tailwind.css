@@ -1,0 +1,48 @@
+
+*, body, button {
+    outline: none;
+}
+
+
+/*!  ---- INDEX - RLsolutions ---- */
+.rlsolutions {
+    -webkit-animation: fluido 2s ease-in-out infinite;
+    animation: fluido 3s ease-in-out infinite;
+    background: linear-gradient(260deg,  #2A4189, #376EAD, #4A92D0, #55A9EA);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes fluido {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes fluido {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/*! ----End - INDEX---- */
+
+
