@@ -109,7 +109,10 @@ class crud
 
     public static function nameContenido($id)
     {
-        $view = connect::conexion()->prepare("SELECT * FROM subcarpeta WHERE id = :id");
+        $view = connect::conexion()->prepare("SELECT carpeta1.id AS idCarpeta, subcarpeta.nombre, subcarpeta.id
+FROM carpeta1
+INNER JOIN subcarpeta
+ON carpeta1.id = subcarpeta.idCarpeta WHERE subcarpeta.id = :id");
         $view->bindParam(':id', $id);
         $view->execute();
         return $view->fetchAll(PDO::FETCH_ASSOC);

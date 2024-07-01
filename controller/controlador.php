@@ -161,7 +161,8 @@ class controlador
             $id = $this->decryptId($encryptedId, $this->key);
             $view = crud::nameContenido($id);
             foreach ($view as $item2) {
-                echo '<a href="index.php?accion=subCarpetas&item=' . urlencode($id) . '">' . htmlspecialchars($item2['nombre']) . '</a>';
+                $idEnc = $this->encryptId($item2['idCarpeta'], $this->key);
+                echo '<a href="index.php?accion=subCarpetas&item=' . urlencode($idEnc) . '">' . htmlspecialchars($item2['nombre']) . '</a>';
             }
         }
     }
