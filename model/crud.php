@@ -118,4 +118,10 @@ ON carpeta1.id = subcarpeta.idCarpeta WHERE subcarpeta.id = :id");
         return $view->fetchAll(PDO::FETCH_ASSOC);
         $view->closeCursor();
     }
+
+public static function CotizacionModel(){
+    
+}
+
+
 }

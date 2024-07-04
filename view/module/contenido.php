@@ -55,7 +55,7 @@ require_once "windows/contenido.php";
                         <?php for ($i = 0; $i < 10; $i++) { ?>
                             <tr>
                                 <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 ">
-                                    Ctotizacion 0-1
+                                    Cotización 0-1
                                 </th>
                                 <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 ">
                                     10/05/24
@@ -71,24 +71,20 @@ require_once "windows/contenido.php";
                                 <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap pr-5">
                                     <ul class="relative text-[1rem]">
                                         <li class="text-[1rem] btnAccion">
-                                            <button class="focus:outline-none">
+                                            <button class="focus:outline-none p-[.5rem] px-[.8rem] hover:text-blue-500">
                                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                                             </button>
                                         </li>
-                                        <ul class="viewAccion absolute flex top-0 right-0 space-x-4 opacity-0 transition-opacity duration-300 ease-in-out transform translate-x-full">
-                                            <li><i class="fa-solid fa-eye"></i></li>
-                                            <li><i class="fa-solid fa-file-arrow-down"></i></li>
-                                            <li><i class="fa-solid fa-trash"></i></li>
+                                        <ul class="viewAccion absolute flex items-center top-[25%] right-0 space-x-4 opacity-0 transition-opacity duration-300 ease-in-out transform translate-x-full">
+                                            <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                                            <li><a href="#"><i class="fa-solid fa-file-arrow-down"></i></a></li>
+                                            <li><a href="#"><i class="fa-solid fa-trash"></i></a></li>
                                         </ul>
                                     </ul>
                                 </td>
-
                             </tr>
                         <?php } ?>
-
-
                     </tbody>
-
                 </table>
             </div>
         </div>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RLsolutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        /* Reglas para salto de página */
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+
+            .SectionTable {
+                page-break-inside: auto;
+            }
+
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+
+            thead {
+                display: table-header-group;
+            }
+
+            tfoot {
+                display: table-footer-group;
+            }
+            footer {
+                position: fixed;
+                bottom: 40px;
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="max-w-[1440px] mx-auto">
+
+    <header class="w-full h-[3rem] px-3 mt-[3rem] mx-auto flex justify-around place-items-center">
+        <div class="">
+            <img class="w-[200px] object-cover" src="./img/RLsolutions - web 1.1.png" alt="">
+        </div>
+        <div class="text-center">
+            <div class="flex justify-center place-items-center space-x-2">
+                <h1 class="font-bold text-[1.3rem] flex justify-center place-items-center">Cotización</h1>
+                <img class="w-[150px] object-fill" src="img/Nombre RLsolutions.png" alt="">
+            </div>
+            <div class="">
+                <p class="text-[0.8rem]">CARRETERA GUERRERO KM 5 <br> Col.PLAN DE AYALA | C.P 26183 <br> R.F.C
+                    LEAR861115ATA</p>
+            </div>
+        </div>
+        <div class="">
+            <div class="flex items-center space-x-2">
+                <img class="w-[80px] object-contain" src="img/logos/A-B.png" alt="">
+                <img class="w-[80px] object-contain" src="img/logos/balluff.png" alt="">
+            </div>
+            <div class="flex items-center space-x-2">
+                <img class="w-[80px] object-contain" src="img/logos/omron.png" alt="">
+                <img class="w-[80px] object-contain" src="img/logos/turck-transformed.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+
+    <section class="flex justify-center px-1">
+        <div class="w-full border border-blue-500 py-2 rounded-lg space-y-2">
+            <div class="block w-full flex justify-between px-[3rem]">
+                <div class="w-[50%] flex block items-center space-x-2">
+                    <span>Atención: </span>
+                    <p class="font-semibold uppercase border border-blue-500 rounded-md px-2 py-1">ING. Edgar Terrazas
+                    </p>
+                </div>
+                <div class="w-[50%] flex justify-end items-center space-x-2">
+                    <span class="">Cotización: </span>
+                    <p class="uppercase text-[1.1rem] border border-blue-500 rounded-md px-2 py-1">RL05040180605</p>
+                </div>
+            </div>
+
+            <div class="block w-full flex justify-between px-[3rem]">
+                <div class="w-[80%]">
+                    <span class="">A través de la presente me permito cotizarle: </span>
+                </div>
+                <div class="w-[30%] flex justify-end items-center space-x-2">
+                    <span>Fecha: </span>
+                    <p class="border border-blue-500 rounded-md px-2 py-1">05/06/2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="SectionTable">
+        <div class="">
+            <div class="flex flex-col">
+                <div class="sm:mx-0.5 lg:mx-0.5">
+                    <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                        <div class="overflow-hidden">
+                            <table class="min-w-full">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-2 py-2 text-left">#
+                                        </th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-2 py-2 text-left">
+                                            Cantidad</th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-2 py-2 text-left">
+                                            Núm. parte</th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-2 py-2 text-left">
+                                            Descripción</th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-2 py-2 text-left">
+                                            P.Unitario</th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-2 py-2 text-left">
+                                            P.Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white border-b border-blue-500">
+                                        <td class="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            <span class="font-semibold text-blue-600">1</span>
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">2</td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">SQ1K
+                                        </td>
+                                        <td class="w-[520px] text-sm text-gray-900 font-light px-4 py-2">CAJA VACIA DE
+                                            BOTONERA FIJA</td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">$150
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">$300
+                                        </td>
+                                    </tr>
+
+                                    <tr class="bg-white border-b border-blue-500">
+                                        <td class="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            <span class="font-semibold text-blue-600">2</span>
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">
+                                            1
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">
+                                            SQ1K
+                                        </td>
+                                        <td class="w-[520px] text-sm text-gray-900 font-light px-4 py-2 ">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellendus,
+                                            cumque enim voluptatum praesentium recusandae, quidem dolorum necessitatibus
+                                            eius incidunt possimus facere ex illo officia adipisci quam inventore
+                                            sapiente dicta!
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">
+                                            $700
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">
+                                            $700
+                                        </td>
+                                    </tr>
+
+                                    
+                                    <tr class="bg-white border-b border-blue-500">
+                                        <td class="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">
+                                            <span class="font-semibold text-blue-600">3</span>
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">
+                                            5
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">
+                                            J09D-D39J
+                                        </td>
+                                        <td class="w-[520px] text-sm text-gray-900 font-light px-4 py-2 ">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellendus,
+                                            cumque enim voluptatum.
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">
+                                            $200
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-4 py-2 whitespace-nowrap">
+                                            $1000
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex justify-end h-[150px]">
+            <div class="">
+                <div class="w-auto rounded-md ">
+                    <div class="flex space-y-3 border-b border-blue-500 space-x-[3.5rem] justify-between items-baseline">
+                        <label class="" for="">SubTotal</label>
+                        <span class="">$5,000.00 <span class="text-[10px] text-gray-600">MXN</span></span>
+                    </div>
+                    <div class="flex space-y-3 border-b border-blue-500 space-x-[3.5rem] justify-between items-baseline">
+                        <label class="" for="">I.V.A 16%</label>
+                        <span class="">$10,300.00 <span class="text-[10px] text-gray-600">MXN</span></span>
+                    </div>
+                    <div class="flex space-y-3 border-b border-blue-500 space-x-[3.5rem] justify-between items-baseline">
+                        <label class="" for="">Total</label>
+                        <span class="font-semibold">$10,300.00 <span class="text-[10px] text-gray-600">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-slate-800">
+        <div class="container mx-auto text-center">
+            <div class="text-md">
+                <span class="block">Los precios están en MXN.</span>
+                <span class="block">Los tiempos de entrega:</span>
+                <span class="block">La presente cotización tiene una validez de 30 días a partir de la fecha que aparece en la misma.</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

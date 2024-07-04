@@ -94,6 +94,12 @@ class controlador
         }
     }
 
+    public function CreacionCotizacion(){
+        if (isset($_POST[''])) {
+            
+        }
+    }
+
     //! ××××××××××××××××××××××××××××××××××× MOSTRAR DATOS ××××××××××××××××××××××××××××××××××××××××××=
     public function viewCarpeta()
     {
@@ -166,5 +172,8 @@ class controlador
             }
         }
     }
+
+
+
 }
 
